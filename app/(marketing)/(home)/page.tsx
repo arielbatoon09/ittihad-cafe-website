@@ -1,9 +1,22 @@
-import { Button } from "@/components/ui/button";
+import HeroBanner from "@/components/HomePage/HeroBanner";
+import WhyChoose from "@/components/HomePage/WhyChoose";
+import Services from "@/components/HomePage/Services";
+import GamingHub from "@/components/HomePage/GamingHub";
+import Testimonial from "@/components/HomePage/Testimonial";
+import FrequentlyAsk from "@/components/HomePage/FrequentlyAsk";
+import Banner from "@/components/HomePage/Banner";
 
 export default function Home() {
+
   return (
-    <section className="max-w-screen-xl mx-auto px-6 mt-20">
-      <h1 className="text-white bg-secondary-brand h-screen">Homepage</h1>
-    </section>
+    <>
+    <HeroBanner/>
+    <WhyChoose/>
+    <Services/>
+    <GamingHub/>
+    <Testimonial/>
+    <FrequentlyAsk/>
+    <Banner/>
+    </>
   );
 }
