@@ -1,14 +1,41 @@
 const PlayButtonIcon = () => (
-    <svg width="60" height="60" viewBox="0 0 107 107" fill="none" >
-      <rect x="0.795" y="0.795" width="105.409" height="105.409" rx="52.7045" fill="#141414" />
-      <rect x="0.795" y="0.795" width="105.409" height="105.409" rx="52.7045" stroke="#1A1A1A" strokeWidth="1.59091" />
-      <rect x="26.795" y="26.795" width="53.4091" height="53.4091" rx="26.7045" fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="1.59091" />
-      <path d="M65.467 51.2107L48.2795 41.0496C46.8831 40.2244 44.7444 41.0252 44.7444 43.0662V63.3836C44.7444 65.2146 46.7317 66.3181 48.2795 65.4002L65.467 55.2439C67.0002 54.3406 67.0051 52.114 65.467 51.2107Z" fill="#F2D831" />
-    </svg>
-  );
+  <svg width="60" height="60" viewBox="0 0 107 107" fill="none">
+    <rect
+      x="0.795"
+      y="0.795"
+      width="105.409"
+      height="105.409"
+      rx="52.7045"
+      fill="#141414"
+    />
+    <rect
+      x="0.795"
+      y="0.795"
+      width="105.409"
+      height="105.409"
+      rx="52.7045"
+      stroke="#1A1A1A"
+      strokeWidth="1.59091"
+    />
+    <rect
+      x="26.795"
+      y="26.795"
+      width="53.4091"
+      height="53.4091"
+      rx="26.7045"
+      fill="#1A1A1A"
+      stroke="#1A1A1A"
+      strokeWidth="1.59091"
+    />
+    <path
+      d="M65.467 51.2107L48.2795 41.0496C46.8831 40.2244 44.7444 41.0252 44.7444 43.0662V63.3836C44.7444 65.2146 46.7317 66.3181 48.2795 65.4002L65.467 55.2439C67.0002 54.3406 67.0051 52.114 65.467 51.2107Z"
+      fill="#F2D831"
+    />
+  </svg>
+);
 
-  const CheckIcon = () => (
-    <svg
+const CheckIcon = () => (
+  <svg
     width="20"
     height="21"
     viewBox="0 0 20 21"
@@ -22,25 +49,32 @@ const PlayButtonIcon = () => (
       fill="#F2D831"
     />
   </svg>
-  );
+);
 
-  const CheckMark=()=>(
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-black" viewBox="0 0 20 20" fill="currentColor">
-    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+const CheckMark = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-3 w-3 text-black"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
+    <path
+      fillRule="evenodd"
+      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+      clipRule="evenodd"
+    />
   </svg>
-  )
-  
-  const Star=()=>(
-    <svg
-  
-    className="w-5 h-5 text-yellow-400"
+);
+
+const Star = () => (
+  <svg
+    className="w-5 h-5 text-brand-500"
     fill="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
   </svg>
-  )
-  
-  export { PlayButtonIcon, CheckIcon, CheckMark , Star};
-  
+);
+
+export { PlayButtonIcon, CheckIcon, CheckMark, Star };
