@@ -3,7 +3,7 @@ import WhyChoose from "@/components/HomePage/WhyChoose";
 import Services from "@/components/HomePage/Services";
 import GamingHub from "@/components/HomePage/GamingHub";
 import Testimonial from "@/components/HomePage/Testimonial";
-import FrequentlyAsk from "@/components/common/FrequentlyAsk";
+import FAQ from "@/components/common/FAQ";
 import Banner from "@/components/HomePage/Banner";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <Services />
       <GamingHub />
       <Testimonial />
-      <FrequentlyAsk />
+      <FAQ />
       <Banner />
     </main>
   );
