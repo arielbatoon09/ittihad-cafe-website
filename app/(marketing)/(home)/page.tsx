@@ -1,14 +1,14 @@
-import HeroBanner from "@/components/HomePage/HeroBanner";
-import WhyChoose from "@/components/HomePage/WhyChoose";
-import Services from "@/components/HomePage/Services";
-import GamingHub from "@/components/HomePage/GamingHub";
-import Testimonial from "@/components/HomePage/Testimonial";
+import HeroBanner from "@/components/content/HomePage/HeroBanner";
+import WhyChoose from "@/components/content/HomePage/WhyChoose";
+import Services from "@/components/content/HomePage/Services";
+import GamingHub from "@/components/content/HomePage/GamingHub";
+import Testimonial from "@/components/content/HomePage/Testimonial";
 import FAQ from "@/components/common/FAQ";
-import Banner from "@/components/HomePage/Banner";
+import Banner from "@/components/content/HomePage/Banner";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-xl mx-auto px-6 mt-20">
+    <>
       <HeroBanner />
       <WhyChoose />
       <Services />
@@ -16,6 +16,6 @@ export default function Home() {
       <Testimonial />
       <FAQ />
       <Banner />
-    </main>
+    </>
   );
 }

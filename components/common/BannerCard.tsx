@@ -36,7 +36,7 @@ const BannerCard: React.FC<BannerCardProps> = ({
 }) => {
   return (
     <Card
-      className={`col-span-2 overflow-hidden bg-zinc-800 border-zinc-70 relative border-none h-full ${className}`}
+      className={`max-w-screen-xl mx-auto px-6 col-span-2 overflow-hidden bg-zinc-800 border-zinc-70 relative border-none h-full ${className}`}
     >
       <div
         className={`absolute inset-0 z-0 ${imageSize}`}

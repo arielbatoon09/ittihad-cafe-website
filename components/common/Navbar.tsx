@@ -70,7 +70,7 @@ export function Navbar() {
       <nav
         className={cn(
           "border-gray-700 h-20 fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          isScrolled ? "bg-background-950/80 backdrop-blur-sm" : "bg-background",
+          isScrolled ? "bg-background/80 backdrop-blur-sm" : "bg-background",
           !isMenuOpen && "border-b"
         )}
       >

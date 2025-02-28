@@ -28,7 +28,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 }) => {
   return (
     <section className="bg-black text-white py-16">
-      <div className="container mx-auto">
+      <div className="max-w-screen-xl mx-auto px-6">
         <p className="text-gray-400 uppercase text-center tracking-wider text-sm mb-2">
           {sectionTitle}
         </p>
