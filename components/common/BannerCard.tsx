@@ -15,6 +15,7 @@ interface BannerCardProps {
   className?: string;
   textSize?: string;
   imageSize?: string;
+  setOpacity?:string;
 }
 
 export const highlightText = (text: string): string => {
@@ -33,11 +34,15 @@ const BannerCard: React.FC<BannerCardProps> = ({
   className = "",
   textSize = "",
   imageSize = "",
+  setOpacity=""
 }) => {
   return (
     <Card
-      className={`col-span-2 overflow-hidden bg-zinc-800 border-zinc-70 relative border-none h-full ${className}`}
+      className={`relative col-span-2  h-full ${className}`}
     >
+       { setOpacity && (<>  
+        <div className="absolute inset-0 bg-gray-600  opacity-[.3]"></div>
+       </>)}
       <div
         className={`absolute inset-0 z-0 ${imageSize}`}
         style={{

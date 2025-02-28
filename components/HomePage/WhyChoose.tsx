@@ -19,6 +19,8 @@ const WhyChoose = () => {
           "Premium Gaming Environment",
         ]}
         buttonText="Learn More"
+        tagTitle=""
+        imagePosition="left"
       />
     </div>
   );

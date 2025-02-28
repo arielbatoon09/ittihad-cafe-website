@@ -9,7 +9,7 @@ const Banner = () => {
     buttonText: "Book Your Spot Now",
     backgroundImage: "/media/banner-background2.jpg",
     imageSize: "w-[200px] h-[200px]",
-    className: "text-[30px]",
+    className: "text-[30px] overflow-hidden bg-zinc-800 border-zinc-70 relative border-none",
   };
 
   return (
