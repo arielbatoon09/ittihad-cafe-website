@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={urbanist.variable}>
-      <body className={`${urbanist.className} text-foreground antialiased !font-default overflow-x-hidden`}>
+      <body className={`${urbanist.className} text-foreground antialiased !font-default overflow-x-hidden flex min-h-screen flex-col`}>
         {children}
       </body>
     </html>

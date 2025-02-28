@@ -5,7 +5,7 @@ export default function MarketingLayout({ children }: Readonly<{ children: React
   return (
     <>
       <Navbar />
-      <main>
+      <main className="flex-1">
         {children}
       </main>
       <Footer />

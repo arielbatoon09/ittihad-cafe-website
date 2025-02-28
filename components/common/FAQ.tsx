@@ -27,7 +27,7 @@ const FAQList = [
 export default function FAQ() {
   return (
     <div className="min-h-screen text-white flex justify-center items-center p-4 bg-black">
-      <div className="max-w-3xl w-full">
+      <div className="max-w-screen-lg mx-auto px-6 w-full">
         <div className="text-center mb-6">
           <h2 className="text-3xl font-bold mb-1 text-gray-100">
             Frequently Asked <span className="text-brand-500">Questions</span>

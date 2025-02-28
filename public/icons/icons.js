@@ -1,5 +1,5 @@
 const PlayButtonIcon = () => (
-  <svg width="60" height="60" viewBox="0 0 107 107" fill="none">
+  <svg width="84" height="84" viewBox="0 0 107 107" fill="none">
     <rect
       x="0.795"
       y="0.795"
