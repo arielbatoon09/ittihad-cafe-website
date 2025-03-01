@@ -1,6 +1,6 @@
 import BannerCard from "@/components/common/BannerCard";
 
-const Banner = () => {
+export default function Banner (){
   const bannerData = {
     title:
       "Unleash the Ultimate Gaming Experience<br/> at <span className='text-brand-500'>Ittihad Internet Cafe</span>",
@@ -9,7 +9,8 @@ const Banner = () => {
     buttonText: "Book Your Spot Now",
     backgroundImage: "/media/banner-background2.jpg",
     imageSize: "w-[200px] h-[200px]",
-    className: "text-[30px] overflow-hidden bg-zinc-800 border-zinc-70 relative border-none max-w-screen-xl mx-auto px-6",
+    className:
+      "text-[30px] overflow-hidden bg-zinc-800 border-zinc-70 relative border-none max-w-screen-xl mx-auto px-6",
   };
 
   return (
@@ -19,4 +20,3 @@ const Banner = () => {
   );
 };
 
-export default Banner;

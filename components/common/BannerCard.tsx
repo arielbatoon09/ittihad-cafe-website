@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardContent,
@@ -15,7 +14,7 @@ interface BannerCardProps {
   className?: string;
   textSize?: string;
   imageSize?: string;
-  setOpacity?:string;
+  setOpacity?: string;
 }
 
 export const highlightText = (text: string): string => {
@@ -34,15 +33,15 @@ const BannerCard: React.FC<BannerCardProps> = ({
   className = "",
   textSize = "",
   imageSize = "",
-  setOpacity=""
+  setOpacity = "",
 }) => {
   return (
-    <Card
-      className={`relative col-span-2  h-full ${className}`}
-    >
-       { setOpacity && (<>  
-        <div className="absolute inset-0 bg-gray-600  opacity-[.3]"></div>
-       </>)}
+    <Card className={`relative col-span-2  h-full ${className}`}>
+      {setOpacity && (
+        <>
+          <div className="absolute inset-0 bg-gray-600  opacity-[.3]"></div>
+        </>
+      )}
       <div
         className={`absolute inset-0 z-0 ${imageSize}`}
         style={{

@@ -8,19 +8,23 @@ const FAQList = [
   },
   {
     question: "Lorem ipsum 2?",
-    answer: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+    answer:
+      "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     question: "Lorem ipsum 3?",
-    answer: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+    answer:
+      "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     question: "Lorem ipsum 4?",
-    answer: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+    answer:
+      "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     question: "Lorem ipsum 5?",
-    answer: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+    answer:
+      "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
@@ -33,7 +37,8 @@ export default function FAQ() {
             Frequently Asked <span className="text-brand-500">Questions</span>
           </h2>
           <p className="text-sm text-gray-400">
-            If this question is most valuable to you? Not exactly! Feel free to contact us personally.
+            If this question is most valuable to you? Not exactly! Feel free to
+            contact us personally.
             <br /> via email through your respective tickets.
           </p>
         </div>

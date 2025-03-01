@@ -1,7 +1,6 @@
-import React from "react";
 import FeatureSection from "@/components/common/FeatureSection";
 
-const WhyChoose = () => {
+export default function WhyChoose() {
   return (
     <div>
       <FeatureSection
@@ -21,9 +20,8 @@ const WhyChoose = () => {
         buttonText="Learn More"
         tagTitle=""
         imagePosition="left"
+        pathname="/"
       />
     </div>
   );
-};
-
-export default WhyChoose;
+}
