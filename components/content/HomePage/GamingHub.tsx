@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "../../ui/button";
 import { CheckMark } from "@/public/icons/icons";
 
-const GamingHub = () => {
+export default function GamingHub() {
   const features = [
     {
       title: "Elite Gaming Setups",
@@ -122,6 +122,4 @@ const GamingHub = () => {
       </div>
     </section>
   );
-};
-
-export default GamingHub;
+}

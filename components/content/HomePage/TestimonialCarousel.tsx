@@ -1,5 +1,4 @@
 "use client";
-
 import { Star } from "@/public/icons/icons";
 import {
   Carousel,
