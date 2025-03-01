@@ -4,7 +4,6 @@ import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
 
-// max-w-screen-xl mx-auto px-6 
 const HeroBanner = () => {
   return (
     <section className="relative overflow-hidden h-auto bg-[linear-gradient(111deg,rgba(1,1,1,1)_34%,rgba(74,66,15,1)_80%,rgba(78,69,16,1)_54%,rgba(242,216,49,1)_100%)]">
