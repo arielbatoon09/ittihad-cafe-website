@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function HeroBanner() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center bg-black">
