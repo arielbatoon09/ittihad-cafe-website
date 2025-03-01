@@ -19,6 +19,7 @@ export default function InternetCafe(){
     buttonText="Learn More"
     tagTitle="Internet Cafe"
     imagePosition="left"
+    pathname="/services/internet-cafe"
   />
 
   )

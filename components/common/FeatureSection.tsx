@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CheckMark, CheckIcon } from "@/public/icons/icons";
+import Link from "next/link";
 
 interface FeatureSectionProps {
   sectionTitle: string;
@@ -15,6 +16,7 @@ interface FeatureSectionProps {
   buttonText: string;
   tagTitle:string;
   imagePosition:string;
+  pathname:string;
 }
 export const highlightText = (text: string): string => {
   const regex = new RegExp(
@@ -35,7 +37,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   buttonText,
   tagTitle,
   imagePosition,
-  
+  pathname
 }) => {
   return (
     <section className="bg-black text-white py-16 max-w-screen-xl mx-auto px-6">
@@ -88,8 +90,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                 </div>
               ))}
             </div>
-            <Button className="px-8 bg-gradient-to-r mt-8 from-brand-500 to-brand-900 text-white">
-              {buttonText}
+            <Button asChild className="px-8 bg-gradient-to-r mt-8 from-brand-500 to-brand-900 text-white">
+            <Link href={pathname}>{buttonText}</Link>
             </Button>
           </div>
         </div>

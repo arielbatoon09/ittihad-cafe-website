@@ -20,6 +20,7 @@ export default function InternetCafe(){
     buttonText="Get to know"
     tagTitle="Karaoke and Rooftop Billiards"
     imagePosition="left"
+    pathname="/services/karaoke-and-rooftop-billiards"
   />
 
   )

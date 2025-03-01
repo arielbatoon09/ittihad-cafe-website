@@ -21,6 +21,7 @@ const WhyChoose = () => {
         buttonText="Learn More"
         tagTitle=""
         imagePosition="left"
+        pathname="/"
       />
     </div>
   );

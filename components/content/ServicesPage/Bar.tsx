@@ -20,6 +20,7 @@ export default function Bar(){
     buttonText="Learn More"
     tagTitle="Snack Bar and Billiards"
     imagePosition="right"
+    pathname="/services/snack-bar-and-biliards"
   />
 
   )

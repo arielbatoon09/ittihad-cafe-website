@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 import Image from "next/image";
-import BannerCard from "../../common/BannerCard";
+import BannerCard from "./BannerCard";
 export default function ExploreArena() {
   const bannerData = {
     title:
