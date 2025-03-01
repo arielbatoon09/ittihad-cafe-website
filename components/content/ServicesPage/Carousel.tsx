@@ -1,4 +1,3 @@
-
 import { formatContentTitle } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight } from "lucide-react";
@@ -24,7 +23,7 @@ const imageSets: Record<string, { image: string; title: string }[]> = {
     { image: "/media/ittihad-banner-services1.jpg", title: "VIP STATIONS" },
     { image: "/media/why-us-gaming-cafe.jpg", title: "STREAMING SETUP" },
   ],
-  "Karaoke and Rooftop Billiards":[
+  "Karaoke and Rooftop Billiards": [
     { image: "/media/why-us-gaming-cafe.jpg", title: "ITTIHAD INTERNET CAFE" },
     { image: "/media/ittihad-feature-services1.jpg", title: "" },
     { image: "/media/gaming-hub-image4.jpg", title: "GAMING ZONE" },
@@ -35,15 +34,15 @@ const imageSets: Record<string, { image: string; title: string }[]> = {
     { image: "/media/ittihad-banner-services1.jpg", title: "LOUNGE" },
     { image: "/media/why-us-gaming-cafe.jpg", title: "MEETING ROOM" },
     { image: "/media/ittihad-feature-services1.jpg", title: "TECH SUPPORT" },
-  ]
+  ],
 };
 
 interface CarouselProps {
-  pathname: string; 
+  name: string;
 }
 
-export default function Carousel({ pathname }: CarouselProps) {
-  const formattedTitle = formatContentTitle(pathname); 
+export default function Carousel({ name }: CarouselProps) {
+  const formattedTitle = formatContentTitle(name);
 
   const cafeImages = imageSets[formattedTitle] || [];
 

@@ -1,10 +1,9 @@
-// app/membership/internet-cafe/page.tsx
 import Membership from "@/components/common/MemberShip";
 
-export default function IttihadMembership({ pathname }: { pathname: string }) {
+export default function IttihadMembership({ name }: { name: string }) {
   let membershipData;
 
-  if (pathname === "internet-cafe") {
+  if (name === "internet-cafe") {
     membershipData = {
       description:
         "Join our elite gaming network at Wildcard Cafe! Exclusive benefits for high-performance gamers, access to unique gaming stations, and streaming sessions at your convenience.",
@@ -26,7 +25,7 @@ export default function IttihadMembership({ pathname }: { pathname: string }) {
         { label: "Pro", price: "$129.99" },
       ],
     };
-  } else if (pathname === "snack-bar-and-biliards") {
+  } else if (name === "snack-bar-and-biliards") {
     membershipData = {
       description:
         "Enjoy a relaxing time at our Snack Bar and Billiards area! Perfect for casual gamers and social gatherings.",
@@ -47,8 +46,7 @@ export default function IttihadMembership({ pathname }: { pathname: string }) {
         { label: "Pro", price: "$149.99" },
       ],
     };
-  } 
-  else if(pathname=="karaoke-and-rooftop-billiards"){
+  } else if (name == "karaoke-and-rooftop-billiards") {
     membershipData = {
       description:
         "Enjoy a relaxing time at our Snack Bar and Billiards area! Perfect for casual gamers and social gatherings.",
@@ -69,7 +67,7 @@ export default function IttihadMembership({ pathname }: { pathname: string }) {
         { label: "Pro", price: "$149.99" },
       ],
     };
-  }else {
+  } else {
     membershipData = {
       description: "Membership details not available.",
       features: [],

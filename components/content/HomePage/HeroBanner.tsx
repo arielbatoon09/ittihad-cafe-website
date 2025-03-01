@@ -4,7 +4,7 @@ import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
 
-// max-w-screen-xl mx-auto px-6 
+// max-w-screen-xl mx-auto px-6
 const HeroBanner = () => {
   return (
     <section className="relative overflow-hidden h-auto bg-[linear-gradient(111deg,rgba(1,1,1,1)_34%,rgba(74,66,15,1)_80%,rgba(78,69,16,1)_54%,rgba(242,216,49,1)_100%)]">
@@ -14,7 +14,7 @@ const HeroBanner = () => {
           <div className="lg:max-w-2xl ml-auto px-6 lg:pl-14 lg:pr-20 space-y-6 pt-34 lg:pt-0 text-center lg:text-left">
             <div
               className={cn(
-                "inline-block group rounded-full border bg-transparent text-sm text-white transition-all ease-in",
+                "inline-block group rounded-full border bg-transparent text-sm text-white transition-all ease-in"
               )}
             >
               <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out text-white">
@@ -26,8 +26,9 @@ const HeroBanner = () => {
               The First Luxury Gaming Cafe in Cebu
             </h1>
             <p className="text-gray-300">
-              High-performance PCs, ultra-fast internet, premium snacks, billiards, and
-              karaoke—all in one spot! Whether you're here to compete, chill, or just have fun, we've got you covered.
+              High-performance PCs, ultra-fast internet, premium snacks,
+              billiards, and karaoke—all in one spot! Whether you're here to
+              compete, chill, or just have fun, we've got you covered.
             </p>
             <div className="flex items-center flex-wrap lg:flex-nowrap gap-4">
               <Button className="w-full lg:w-auto border border-brand-500 hover:bg-brand-800 text-white px-8 rounded-full bg-[#000]">

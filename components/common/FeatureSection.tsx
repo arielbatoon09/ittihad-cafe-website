@@ -14,15 +14,12 @@ interface FeatureSectionProps {
   description: string;
   features: string[];
   buttonText: string;
-  tagTitle:string;
-  imagePosition:string;
-  pathname:string;
+  tagTitle: string;
+  imagePosition: string;
+  pathname: string;
 }
 export const highlightText = (text: string): string => {
-  const regex = new RegExp(
-    `<span className='text-white'>(.*?)<\/span>`,
-    "g"
-  );
+  const regex = new RegExp(`<span className='text-white'>(.*?)<\/span>`, "g");
   return text.replace(regex, `<span class='text-white'>$1</span>`);
 };
 const FeatureSection: React.FC<FeatureSectionProps> = ({
@@ -37,27 +34,38 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   buttonText,
   tagTitle,
   imagePosition,
-  pathname
+  pathname,
 }) => {
   return (
     <section className="bg-black text-white py-16 max-w-screen-xl mx-auto px-6">
       <div className="container mx-auto">
-      {sectionTitle && (<>
-        <p className="text-gray-400 uppercase text-center tracking-wider text-sm mb-2">
-          {sectionTitle}
-        </p>
-      </>)}
-      {sectionSubTitle && title && (<>
-        <div className="text-center mb-8 py-6">
-          <h3 className="text-white text-2xl font-medium mb-2">
-            {sectionSubTitle}
-          </h3>
-          <h2 className="text-brand-500 text-3xl font-bold" dangerouslySetInnerHTML={{__html: highlightText(title)}}/>
-        </div>
-      </>)}
-       
+        {sectionTitle && (
+          <>
+            <p className="text-gray-400 uppercase text-center tracking-wider text-sm mb-2">
+              {sectionTitle}
+            </p>
+          </>
+        )}
+        {sectionSubTitle && title && (
+          <>
+            <div className="text-center mb-8 py-6">
+              <h3 className="text-white text-2xl font-medium mb-2">
+                {sectionSubTitle}
+              </h3>
+              <h2
+                className="text-brand-500 text-3xl font-bold"
+                dangerouslySetInnerHTML={{ __html: highlightText(title) }}
+              />
+            </div>
+          </>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className={`relative overflow-hidden rounded-lg ${imagePosition !== 'left' ? 'md:order-last' : ''}`}>
+          <div
+            className={`relative overflow-hidden rounded-lg ${
+              imagePosition !== "left" ? "md:order-last" : ""
+            }`}
+          >
             <Image
               src={imageSrc}
               width={500}
@@ -68,15 +76,17 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           </div>
 
           <div>
-            {tagTitle && (<>
-              <div className="mb-6">
-            <Button className="flex items-center gap-[12px] text-[#FFFFFF] text-[16px] bg-[#F4BC3B1A] hover:bg-[#F4BC3B1A] p-6 rounded-full w-auto">
-              <CheckIcon />
-              <span>{tagTitle}</span>
-            </Button>
-          </div>
-            </>)}
-         
+            {tagTitle && (
+              <>
+                <div className="mb-6">
+                  <Button className="flex items-center gap-[12px] text-[#FFFFFF] text-[16px] bg-[#F4BC3B1A] hover:bg-[#F4BC3B1A] p-6 rounded-full w-auto">
+                    <CheckIcon />
+                    <span>{tagTitle}</span>
+                  </Button>
+                </div>
+              </>
+            )}
+
             <h3 className="text-xl font-bold mb-3">{subTitle}</h3>
             <p className="text-gray-400 mb-6">{description}</p>
 
@@ -90,8 +100,11 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                 </div>
               ))}
             </div>
-            <Button asChild className="px-8 bg-gradient-to-r mt-8 from-brand-500 to-brand-900 text-white">
-            <Link href={pathname}>{buttonText}</Link>
+            <Button
+              asChild
+              className="px-8 bg-gradient-to-r mt-8 from-brand-500 to-brand-900 text-white"
+            >
+              <Link href={pathname}>{buttonText}</Link>
             </Button>
           </div>
         </div>

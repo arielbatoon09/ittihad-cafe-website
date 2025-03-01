@@ -13,7 +13,9 @@ interface InteractiveCarouselProps {
   cafeImages: { image: string; title: string }[];
 }
 
-export default function InteractiveCarousel({ cafeImages }: InteractiveCarouselProps) {
+export default function InteractiveCarousel({
+  cafeImages,
+}: InteractiveCarouselProps) {
   const [currentPage, setCurrentPage] = useState(0);
 
   const thumbnailImages = cafeImages.map((img) => img.image);
