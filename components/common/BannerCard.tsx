@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ButtonV2 } from "../magicui/interactive-hover-button";
 
 interface BannerCardProps {

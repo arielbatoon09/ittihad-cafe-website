@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigationStore } from "@/store/navgation.store";
 import { useEffect, useState } from "react";

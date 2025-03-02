@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "../../ui/button";
 import { CheckMark } from "@/public/icons/icons";
 import { ButtonV2 } from "@/components/magicui/interactive-hover-button";
 
