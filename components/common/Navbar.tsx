@@ -106,7 +106,7 @@ export function Navbar() {
               ))}
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <ButtonV2 variant="secondary">
+              <ButtonV2>
                 Contact Us
               </ButtonV2>
             </div>
