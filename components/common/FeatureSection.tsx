@@ -62,9 +62,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div
-            className={`relative overflow-hidden rounded-lg ${
-              imagePosition !== "left" ? "md:order-last" : ""
-            }`}
+            className={`relative overflow-hidden rounded-lg ${imagePosition !== "left" ? "md:order-last" : ""
+              }`}
           >
             <Image
               src={imageSrc}
@@ -72,7 +71,9 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
               height={500}
               alt={imageAlt}
               className="w-full md:min-h-[500px] object-cover"
+              style={{ width: "auto", height: "auto" }}
             />
+
           </div>
 
           <div>

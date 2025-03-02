@@ -77,7 +77,14 @@ export function Navbar() {
         <div className="lg:max-w-screen-xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center gap-4">
-              <Image src="/media/ittihad_cafe_logo.png" height={60} width={60} alt="Text" />
+              <Image
+                src="/media/ittihad_cafe_logo.png"
+                height={60}
+                width={60}
+                alt="Text"
+                style={{ width: "auto", height: "auto" }}
+              />
+
               <h1 className="flex flex-col text-[#F8D906] font-bold text-2xl">
                 Ittihad
                 <span className="font-normal text-white text-base">Internet Cafe</span>

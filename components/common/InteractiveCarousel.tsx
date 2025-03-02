@@ -43,18 +43,19 @@ export default function InteractiveCarousel({
               >
                 <div className="p-1">
                   <div
-                    className={`relative h-16 overflow-hidden rounded-sm ${
-                      index === currentPage
-                        ? "opacity-100 border-2 border-brand-500"
-                        : "opacity-50 hover:opacity-75"
-                    }`}
+                    className={`relative h-16 overflow-hidden rounded-sm ${index === currentPage
+                      ? "opacity-100 border-2 border-brand-500"
+                      : "opacity-50 hover:opacity-75"
+                      }`}
                   >
                     <Image
                       src={img}
                       alt={`Thumbnail ${index + 1}`}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
                     />
+
                   </div>
                 </div>
               </CarouselItem>
@@ -71,16 +72,19 @@ export default function InteractiveCarousel({
               src={currentImageData.image}
               alt={currentImageData.title || "Service Image"}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
+
           )}
         </div>
         {nextImageData ? (
           <div className="aspect-video relative bg-zinc-800 overflow-hidden hidden md:block">
             <Image
-              src={nextImageData.image}
-              alt={nextImageData.title || "Service Image"}
+              src={currentImageData.image}
+              alt={currentImageData.title || "Service Image"}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
           </div>
@@ -107,9 +111,8 @@ export default function InteractiveCarousel({
             {cafeImages.map((_, i) => (
               <div
                 key={i}
-                className={`h-1.5 w-4 rounded-full cursor-pointer ${
-                  i === currentPage ? "bg-brand-500" : "bg-zinc-600"
-                }`}
+                className={`h-1.5 w-4 rounded-full cursor-pointer ${i === currentPage ? "bg-brand-500" : "bg-zinc-600"
+                  }`}
                 onClick={() => navigateToPage(i)}
               />
             ))}

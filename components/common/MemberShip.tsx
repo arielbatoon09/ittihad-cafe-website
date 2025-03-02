@@ -138,7 +138,9 @@ export default function Membership({
                       width={15}
                       height={15}
                       alt="key feature amenities"
+                      style={{ width: "auto", height: "auto" }}
                     />
+
                     <p className="text-sm text-zinc-300">{feature}</p>
                   </div>
                 ))}
