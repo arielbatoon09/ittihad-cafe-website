@@ -8,6 +8,7 @@ import { useNavigationStore } from "@/store/navgation.store";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useNvagationItems } from "@/hooks/navigation.hooks";
+import { ButtonV2 } from "../magicui/interactive-hover-button";
 
 // Scroll Toggle
 const useScrollDetection = () => {
@@ -50,9 +51,9 @@ const MobileMenu = () => {
           </Link>
         ))}
         <div className="pt-4 px-4">
-          <Button className="px-8 bg-gradient-to-r from-brand-500 to-brand-900 text-white w-full">
+          <ButtonV2>
             Contact Us
-          </Button>
+          </ButtonV2>
         </div>
       </div>
     </div>
@@ -106,9 +107,9 @@ export function Navbar() {
               ))}
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <Button className="px-8 bg-gradient-to-r from-brand-500 to-brand-900 text-white">
+              <ButtonV2 variant="secondary">
                 Contact Us
-              </Button>
+              </ButtonV2>
             </div>
             <button
               onClick={toggleMenu}

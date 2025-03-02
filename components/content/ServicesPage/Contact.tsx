@@ -2,20 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
+import { ButtonV2 } from "@/components/magicui/interactive-hover-button";
 
 export default function Contact() {
   return (
     <section className="flex flex-col w-full bg-black text-white py-16 max-w-screen-xl mx-auto px-6 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="relative">
+        <div className="relative space-y-6">
           <div className="flex items-center mb-2">
             <h2 className="text-2xl font-medium">Get in Touch</h2>
           </div>
@@ -35,10 +30,9 @@ export default function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-          <Button className="px-9 bg-zinc-800 text-white mt-4">
+          <ButtonV2 variant="secondary">
             Get Direction
-            <span className="ml-1 text-brand-500">→</span>
-          </Button>
+          </ButtonV2>
         </div>
 
         {/* Form Section */}
@@ -118,16 +112,17 @@ export default function Contact() {
               />
             </div>
 
-            <div className="flex items-center justify-between py-3">
+            <div className="space-y-6">
               <div className="flex items-center gap-2">
                 <Checkbox id="terms" className="border-zinc-700 rounded-sm" />
                 <Label htmlFor="terms" className="text-xs text-zinc-400">
                   I agree with Terms of Use and Privacy Policy
                 </Label>
               </div>
-              <Button className="px-8 bg-gradient-to-r from-brand-500 to-brand-900 text-white">
+
+              <ButtonV2>
                 Send Your Message
-              </Button>
+              </ButtonV2>
             </div>
           </div>
         </div>

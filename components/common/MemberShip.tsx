@@ -31,13 +31,13 @@ export default function Membership({
               <TabsList className="grid w-full grid-cols-2 bg-zinc-900 rounded-md h-12 ">
                 <TabsTrigger
                   value="hourly"
-                  className="text-sm font-medium data-[state=active]:bg-zinc-800  rounded-md h-full"
+                  className="text-sm font-medium data-[state=active]:bg-zinc-800  rounded-md h-full cursor-pointer"
                 >
                   Hourly Rate
                 </TabsTrigger>
                 <TabsTrigger
                   value="membership"
-                  className="text-sm font-medium data-[state=active]:bg-zinc-800 rounded-md h-full"
+                  className="text-sm font-medium data-[state=active]:bg-zinc-800 rounded-md h-full cursor-pointer"
                 >
                   Membership Fee
                 </TabsTrigger>

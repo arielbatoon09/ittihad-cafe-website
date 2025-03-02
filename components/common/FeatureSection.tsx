@@ -1,8 +1,9 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { CheckMark, CheckIcon } from "@/public/icons/icons";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { CheckMark, CheckIcon } from "@/public/icons/icons";
+import { ButtonV2 } from "../magicui/interactive-hover-button";
 
 interface FeatureSectionProps {
   sectionTitle: string;
@@ -76,7 +77,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 
           </div>
 
-          <div>
+          <div className="space-y-10">
             {tagTitle && (
               <>
                 <div className="mb-6">
@@ -101,12 +102,11 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                 </div>
               ))}
             </div>
-            <Button
-              asChild
-              className="px-8 bg-gradient-to-r mt-8 from-brand-500 to-brand-900 text-white"
-            >
-              <Link href={pathname}>{buttonText}</Link>
-            </Button>
+            <Link href={pathname}>
+              <ButtonV2 className="w-full lg:w-auto">
+                {buttonText}
+              </ButtonV2>
+            </Link>
           </div>
         </div>
       </div>

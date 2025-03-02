@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../../ui/button";
 import { CheckMark } from "@/public/icons/icons";
+import { ButtonV2 } from "@/components/magicui/interactive-hover-button";
 
 export default function GamingHub() {
   const features = [
@@ -57,23 +58,9 @@ export default function GamingHub() {
               ))}
             </div>
 
-            <Button className="flex items-center space-x-2 p-6 text-white bg-[#1A1A1A] w-fit rounded-full">
-              <span>Explore Our Services</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </Button>
+            <div>
+              <ButtonV2 variant="secondary" className="w-full lg:w-auto">Explore Services</ButtonV2>
+            </div>
           </div>
 
           <div className="grid grid-cols-3 grid-rows-2 gap-2 h-2/3 ">

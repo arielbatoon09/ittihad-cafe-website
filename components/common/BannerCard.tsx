@@ -1,10 +1,6 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ButtonV2 } from "../magicui/interactive-hover-button";
 
 interface BannerCardProps {
   title: string;
@@ -58,9 +54,9 @@ const BannerCard: React.FC<BannerCardProps> = ({
             dangerouslySetInnerHTML={{ __html: highlightText(title) }}
           />
 
-          <Button className="px-8 bg-gradient-to-r from-brand-500 to-brand-900 text-white">
+          <ButtonV2 className="w-full lg:w-auto">
             {buttonText}
-          </Button>
+          </ButtonV2>
         </div>
         <CardDescription
           className="text-gray-200 mt-[32px]"

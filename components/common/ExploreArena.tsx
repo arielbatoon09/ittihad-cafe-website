@@ -7,10 +7,10 @@ export default function ExploreArena() {
     title: "Join the Arena. Invest Today.",
     description:
       "This is your chance to be part of a high-demand, rapidly growing market. Invest in a future-proof venture that blends premium <br/> entertainment with lucrative opportunities.",
-    buttonText: "Explore Arena",
+    buttonText: "Join Our Arena",
     backgroundImage: "/media/banner-background2.jpg",
     imageSize: "w-[200px] h-[200px]",
-    className: "text-[30px] bg-transparent",
+    className: "bg-transparent",
     setOpacity: "true",
   };
 

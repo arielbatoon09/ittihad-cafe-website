@@ -20,7 +20,7 @@ export default function WhyChoose() {
         buttonText="Learn More"
         tagTitle=""
         imagePosition="left"
-        pathname="/"
+        pathname="/services/internet-cafe"
       />
     </div>
   );

@@ -112,7 +112,7 @@ const Services: React.FC = () => {
             <BannerCard
               title="The Ultimate Destination for Gamers "
               description="Whether you're a hardcore competitor, a casual player, or a content creator, <br/> <span className='text-brand-500'>Ittihad Internet Cafe</span> is your go-to hub for gaming entertainment and<br/> community!"
-              buttonText="Explore Our Services"
+              buttonText="Our Services"
               backgroundImage="/media/banner-background1.jpg"
               className="overflow-hidden bg-zinc-800 border-zinc-70 relative border-none"
             />

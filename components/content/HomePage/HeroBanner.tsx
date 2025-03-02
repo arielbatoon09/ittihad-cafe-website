@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
+import { ButtonV2 } from "@/components/magicui/interactive-hover-button";
 
 export default function HeroBanner() {
   return (
@@ -17,7 +18,7 @@ export default function HeroBanner() {
               )}
             >
               <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out text-white">
-                <span>✨ Top-Tier Gaming & Cozy Spot</span>
+                <span>✨ Only in Cebu, City</span>
                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
               </AnimatedShinyText>
             </div>
@@ -25,17 +26,11 @@ export default function HeroBanner() {
               The First Luxury Gaming Cafe in Cebu
             </h1>
             <p className="text-gray-300">
-              High-performance PCs, ultra-fast internet, premium snacks,
-              billiards, and karaoke—all in one spot! Whether you're here to
-              compete, chill, or just have fun, we've got you covered.
+              Enjoy high-performance PCs, ultra-fast internet, tasty snacks, billiards, and karaoke all in one place. Compete, relax, or just have fun with us.
             </p>
             <div className="flex items-center flex-wrap lg:flex-nowrap gap-4">
-              <Button className="w-full lg:w-auto border border-brand-500 hover:bg-brand-800 text-white px-8 rounded-full bg-[#000]">
-                Explore Our Services
-              </Button>
-              <Button className="w-full lg:w-auto px-8 bg-gradient-to-r from-brand-500 to-brand-900 text-white">
-                Book Now
-              </Button>
+              <ButtonV2 className="w-full lg:w-auto">Get Direction</ButtonV2>
+              <ButtonV2 variant="secondary" className="w-full lg:w-auto">Explore Services</ButtonV2>
             </div>
           </div>
 
