@@ -27,7 +27,7 @@ export default function InteractiveCarousel({
   };
 
   const currentImageData = cafeImages[currentPage];
-  const nextImageData = cafeImages[currentPage + 1] || null;
+  const nextImageData = cafeImages[(currentPage + 1) % cafeImages.length];
 
   return (
     <>
@@ -43,10 +43,11 @@ export default function InteractiveCarousel({
               >
                 <div className="p-1">
                   <div
-                    className={`relative h-16 overflow-hidden rounded-sm ${index === currentPage
-                      ? "opacity-100 border-2 border-brand-500"
-                      : "opacity-50 hover:opacity-75"
-                      }`}
+                    className={`relative h-16 overflow-hidden rounded-sm ${
+                      index === currentPage
+                        ? "opacity-100 border-2 border-brand-500"
+                        : "opacity-50 hover:opacity-75"
+                    }`}
                   >
                     <Image
                       src={img}
@@ -55,7 +56,6 @@ export default function InteractiveCarousel({
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
                     />
-
                   </div>
                 </div>
               </CarouselItem>
@@ -75,21 +75,20 @@ export default function InteractiveCarousel({
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
-
           )}
         </div>
         {nextImageData ? (
           <div className="aspect-video relative bg-zinc-800 overflow-hidden hidden md:block">
             <Image
-              src={currentImageData.image}
-              alt={currentImageData.title || "Service Image"}
+              src={nextImageData.image}
+              alt={nextImageData.title || "Service Image"}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
           </div>
         ) : (
-          <div className="aspect-video relative bg-zinc-800 overflow-hidden flex items-center justify-center hidden md:flex">
+          <div className="aspect-video relative bg-zinc-800 overflow-hidden md:flex items-center justify-center hidden">
             <span className="text-gray-500">No Image</span>
           </div>
         )}
@@ -111,8 +110,9 @@ export default function InteractiveCarousel({
             {cafeImages.map((_, i) => (
               <div
                 key={i}
-                className={`h-1.5 w-4 rounded-full cursor-pointer ${i === currentPage ? "bg-brand-500" : "bg-zinc-600"
-                  }`}
+                className={`h-1.5 w-4 rounded-full cursor-pointer ${
+                  i === currentPage ? "bg-brand-500" : "bg-zinc-600"
+                }`}
                 onClick={() => navigateToPage(i)}
               />
             ))}
